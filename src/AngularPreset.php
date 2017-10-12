@@ -19,9 +19,10 @@ class AngularPreset extends Preset
      */
     public static function install()
     {
-        static::ensureComponentDirectoryExists();
         static::updatePackages();
+        static::updateWebpackConfiguration();
         static::updateBootstrapping();
+        static::ensureComponentDirectoryExists();
         static::updateComponent();
         static::removeNodeModules();
     }
@@ -45,8 +46,20 @@ class AngularPreset extends Preset
                 '@angular/router' => '^4.0.0',
                 'core-js' => '^2.4.1',
                 'rxjs' => '^5.1.0',
+                'ts-loader' => '^2.3.7',
+                'typescript' => '~2.2.0',
                 'zone.js' => '^0.8.4'
-            ] + Arr::except($packages, ['jquery', 'vue']);
+            ] + Arr::except($packages, ['axios', 'jquery', 'vue']);
+    }
+
+    /**
+     * Update the Webpack configuration.
+     *
+     * @return void
+     */
+    protected static function updateWebpackConfiguration()
+    {
+        copy(__DIR__ . '/angular-stubs/webpack.mix.js', base_path('webpack.mix.js'));
     }
 
     /**
@@ -56,7 +69,7 @@ class AngularPreset extends Preset
      */
     protected static function updateComponent()
     {
-        (new Filesystem)->delete(resource_path('assets/js/components/Example.*'));
+        (new Filesystem)->deleteDirectory(resource_path('assets/js/components'), true);
 
         copy(__DIR__ . '/angular-stubs/example.component.ts', resource_path('assets/js/components/example.component.ts'));
     }
@@ -68,6 +81,9 @@ class AngularPreset extends Preset
      */
     protected static function updateBootstrapping()
     {
-        copy(__DIR__.'/angular-stubs/app.module.ts', resource_path('assets/js/app.module.ts'));
+        copy(__DIR__ . '/angular-stubs/main.ts', resource_path('assets/js/main.ts'));
+        copy(__DIR__ . '/angular-stubs/app.module.ts', resource_path('assets/js/app.module.ts'));
+        copy(__DIR__ . '/angular-stubs/environment.ts', resource_path('assets/js/environment.ts'));
+        copy(__DIR__ . '/angular-stubs/tsconfig.json', resource_path('assets/js/tsconfig.json'));
     }
 }
