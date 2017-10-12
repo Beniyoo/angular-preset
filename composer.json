@@ -1,0 +1,25 @@
+{
+  "name": "walteribeiro/angular-preset",
+  "description": "Laravel 5.5.x Front-end preset for Angular 4",
+  "keywords": [
+    "laravel",
+    "preset",
+    "angular"
+  ],
+  "license": "MIT",
+  "require": {
+    "laravel/framework": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Walteribeiro\\AngularPreset\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Walteribeiro\\AngularPreset\\AngularPresetServiceProvider"
+      ]
+    }
+  }
+}
