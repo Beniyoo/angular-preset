@@ -1,6 +1,6 @@
 {
-  "name": "walteribeiro/angular-preset",
-  "description": "Laravel 5.5.x Front-end preset for Angular 4",
+  "name": "egwk/angular-preset",
+  "description": "Laravel 5.6.x Front-end preset for Angular 6",
   "keywords": [
     "laravel",
     "preset",
@@ -8,17 +8,17 @@
   ],
   "license": "MIT",
   "require": {
-    "laravel/framework": "5.5.*"
+    "laravel/framework": "5.6.*"
   },
   "autoload": {
     "psr-4": {
-      "Walteribeiro\\AngularPreset\\": "src/"
+      "EGWK\\AngularPreset\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Walteribeiro\\AngularPreset\\AngularPresetServiceProvider"
+        "EGWK\\AngularPreset\\AngularPresetServiceProvider"
       ]
     }
   }

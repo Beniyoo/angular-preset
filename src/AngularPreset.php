@@ -1,6 +1,6 @@
 <?php
 
-namespace Walteribeiro\AngularPreset;
+namespace EGWK\AngularPreset;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset;
@@ -36,19 +36,20 @@ class AngularPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-                '@angular/common' => '^4.0.0',
-                '@angular/compiler' => '^4.0.0',
-                '@angular/core' => '^4.0.0',
-                '@angular/forms' => '^4.0.0',
-                '@angular/http' => '^4.0.0',
-                '@angular/platform-browser' => '^4.0.0',
-                '@angular/platform-browser-dynamic' => '^4.0.0',
-                '@angular/router' => '^4.0.0',
-                'core-js' => '^2.4.1',
-                'rxjs' => '^5.1.0',
-                'ts-loader' => '^2.3.7',
-                'typescript' => '~2.2.0',
-                'zone.js' => '^0.8.4'
+                '@angular/common' => '^6.0.3',
+                '@angular/compiler' => '^6.0.3',
+                '@angular/core' => '^6.0.3',
+                '@angular/forms' => '^6.0.3',
+                '@angular/http' => '^6.0.3',
+                '@angular/platform-browser' => '^6.0.3',
+                '@angular/platform-browser-dynamic' => '^6.0.3',
+                '@angular/router' => '^6.0.3',
+                'core-js' => '^2.5.4',
+                'rxjs' => '^6.0.0',
+                'ts-loader' => '^4.4.2',
+                'typescript' => '^3.0.1',
+                'zone.js' => '^0.8.26',
+                '@angular/animations' => '^6.0.3'
             ] + Arr::except($packages, ['axios', 'jquery', 'vue']);
     }
 
