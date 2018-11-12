@@ -46,7 +46,7 @@ class AngularPreset extends Preset
                 '@angular/router' => '^7.0.0',
                 'core-js' => '^2.5.4',
                 'rxjs' => '^6.3.3',
-                'ts-loader' => '^4.4.2',
+                'ts-loader' => '^5.3.0',
                 'typescript' => '~3.1.6',
                 'zone.js' => '^0.8.26',
                 '@angular/animations' => '^7.0.0'
