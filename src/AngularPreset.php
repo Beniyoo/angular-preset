@@ -1,6 +1,6 @@
 <?php
 
-namespace EGWK\AngularPreset;
+namespace BENIYOO\AngularPreset;
 
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Console\Presets\Preset;
