@@ -1,6 +1,6 @@
 {
   "name": "egwk/angular-preset",
-  "description": "Laravel 5.6.x Front-end preset for Angular 6",
+  "description": "Laravel 5.5+ Front-end preset for Angular 7",
   "keywords": [
     "laravel",
     "preset",
@@ -8,7 +8,7 @@
   ],
   "license": "MIT",
   "require": {
-    "laravel/framework": "5.6.*"
+    "laravel/framework": "5.5.*"
   },
   "autoload": {
     "psr-4": {
