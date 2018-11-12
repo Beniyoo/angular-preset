@@ -1,2 +1,2 @@
 # angular-preset
-Laravel 5.6.x front-end preset for Angular 6 scaffolding
+Laravel 5.5.x+ front-end preset for Angular 7 scaffolding
