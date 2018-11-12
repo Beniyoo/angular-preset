@@ -1,6 +1,6 @@
 <?php
 
-namespace EGWK\AngularPreset;
+namespace BENIYOO\AngularPreset;
 
 use Illuminate\Foundation\Console\PresetCommand;
 use Illuminate\Support\ServiceProvider;
@@ -20,7 +20,7 @@ class AngularPresetServiceProvider extends ServiceProvider
     {
         PresetCommand::macro('angular', function ($command) {
             AngularPreset::install(false);
-            $command->info('Angular 6 scaffolding installed successfully.');
+            $command->info('Angular 7 scaffolding installed successfully.');
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
     }
