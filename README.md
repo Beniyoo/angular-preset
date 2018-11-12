@@ -1,6 +1,6 @@
 # angular-preset
 Laravel 5.5.x+ front-end preset for Angular 7 scaffolding
 
-INSTALLATION
+<strong>INSTALLATION</strong>
 
-composer install calebporzio/laravel-frontend-preset
+<code>composer install calebporzio/laravel-frontend-preset</code>
