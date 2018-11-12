@@ -36,20 +36,20 @@ class AngularPreset extends Preset
     protected static function updatePackageArray(array $packages)
     {
         return [
-                '@angular/common' => '^6.0.3',
-                '@angular/compiler' => '^6.0.3',
-                '@angular/core' => '^6.0.3',
-                '@angular/forms' => '^6.0.3',
-                '@angular/http' => '^6.0.3',
-                '@angular/platform-browser' => '^6.0.3',
-                '@angular/platform-browser-dynamic' => '^6.0.3',
-                '@angular/router' => '^6.0.3',
+                '@angular/common' => '^7.0.0',
+                '@angular/compiler' => '^7.0.0',
+                '@angular/core' => '^7.0.0',
+                '@angular/forms' => '^7.0.0',
+                '@angular/http' => '^7.0.0',
+                '@angular/platform-browser' => '^7.0.0',
+                '@angular/platform-browser-dynamic' => '^7.0.0',
+                '@angular/router' => '^7.0.0',
                 'core-js' => '^2.5.4',
-                'rxjs' => '^6.0.0',
-                'ts-loader' => '^4.4.2',
-                'typescript' => '^3.0.1',
+                'rxjs' => '^6.3.3',
+                'ts-loader' => '^5.3.0',
+                'typescript' => '~3.1.6',
                 'zone.js' => '^0.8.26',
-                '@angular/animations' => '^6.0.3'
+                '@angular/animations' => '^7.0.0'
             ] + Arr::except($packages, ['axios', 'jquery', 'vue']);
     }
 
